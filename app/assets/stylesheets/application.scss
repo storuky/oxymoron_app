@@ -1,0 +1,12 @@
+/*
+ *= require oxymoron/ng-notify
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.rails-errors {
+  color: red;
+  font-size: 12px;
+}

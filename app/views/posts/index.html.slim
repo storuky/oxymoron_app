@@ -1,0 +1,14 @@
+h1 Posts
+
+input.form-control type="text" ng-model="search" placeholder="Поиск"
+br
+table.table.table-bordered
+  thead
+    tr
+      th Date
+      th Title
+  tbody
+    tr ng-repeat="post in ctrl.posts | filter:search"
+      td ng-bind="post.created_at | date:'dd.MM.yyyy'"
+      td
+        a ui-sref="post_path(post)" ng-bind="post.title"

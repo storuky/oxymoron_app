@@ -1,0 +1,16 @@
+html ng-app="app"
+  head
+    title Блог
+    base href="/"
+    = stylesheet_link_tag 'application'
+  body
+    .container
+      .navbar.navbar-default
+        .container-fluid
+          ul.nav.navbar-nav
+            li ui-sref-active="active"
+              a ui-sref="posts_path" Все посты
+            li ui-sref-active="active"
+              a ui-sref="new_post_path" Новый пост
+      ui-view
+    = javascript_include_tag 'application'

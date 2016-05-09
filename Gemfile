@@ -49,3 +49,5 @@ gem 'slim'
 gem 'slim-rails'
 gem 'thin'
 gem 'oxymoron'
+
+gem 'bootstrap-sass', '~> 3.3.6'

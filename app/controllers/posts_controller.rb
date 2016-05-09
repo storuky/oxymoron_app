@@ -57,7 +57,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    render json: {msg: "Post successfully deleted"}
+    render json: {msg: "Post successfully deleted", redirect_to: "posts_path"}
   end
 
   private

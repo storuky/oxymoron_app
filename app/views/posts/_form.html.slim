@@ -6,3 +6,5 @@
     = f.label :description
     = f.text_area :description, class: "form-control"
   = f.submit "Save", class: "btn btn-primary"
+  | &nbsp;
+  a.btn.btn-danger ng-click="ctrl.destroy(ctrl.post)" ng-if="ctrl.post.id" Удалить

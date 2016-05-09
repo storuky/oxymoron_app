@@ -29,6 +29,16 @@ app.controller('PostsCtrl', ['Post', 'action', function (Post, action) {
       //
     })
 
+    action(['index', 'edit', 'show'], function () {
+      ctrl.destroy = function (post) {
+        Post.destroy({id: post.id}, function () {
+          ctrl.posts = _.select(ctrl.posts, function (_post) {
+            return _post.id != post.id
+          })
+        })
+      }
+    })
+
     // Так же внутри ресурса routes.rb можно создать свой кастомный метод. Вызовется для: '/posts/some_method'
     action('some_method', function(){
       //

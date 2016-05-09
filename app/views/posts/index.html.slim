@@ -7,8 +7,13 @@ table.table.table-bordered
     tr
       th Date
       th Title
+      th
   tbody
     tr ng-repeat="post in ctrl.posts | filter:search"
       td ng-bind="post.created_at | date:'dd.MM.yyyy'"
       td
         a ui-sref="post_path(post)" ng-bind="post.title"
+      td.w1
+        a.btn.btn-danger ng-click="ctrl.destroy(post)" Удалить
+        | &nbsp;
+        a.btn.btn-primary ui-sref="edit_post_path(post)" Редактировать

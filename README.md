@@ -1,6 +1,6 @@
 Build with [Oxymoron](https://github.com/storuky/oxymoron)
 
-* How to start
+## How to start
 ```
 bundle
 rake db:create

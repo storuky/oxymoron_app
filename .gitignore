@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 /app/assets/javascripts/oxymoron.js
+
+.ruby-gemset
+.ruby-version

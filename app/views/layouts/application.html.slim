@@ -1,6 +1,6 @@
 html ng-app="app"
   head
-    title Блог
+    title Blog
     base href="/"
     = stylesheet_link_tag 'application'
   body
@@ -9,8 +9,8 @@ html ng-app="app"
         .container-fluid
           ul.nav.navbar-nav
             li ui-sref-active="active"
-              a ui-sref="posts_path" Все посты
+              a ui-sref="posts_path" All posts
             li ui-sref-active="active"
-              a ui-sref="new_post_path" Новый пост
+              a ui-sref="new_post_path" New post
       ui-view
     = javascript_include_tag 'application'
